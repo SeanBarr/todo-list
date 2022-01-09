@@ -32,6 +32,10 @@ function App(){
   }
 
   return(
+    <> 
+    <div className="header">
+    <h1>To-Do List</h1>
+    </div>
     <div className="app">
       <div className="todo-list" >
         {todos.map((todo, i) => (
@@ -40,6 +44,8 @@ function App(){
         <TodoForm addTodo={addTodo} />
       </div>
     </div>
+    <footer><p>Sean Barr &copy; 2022</p></footer>
+    </>
   );
 }
 
